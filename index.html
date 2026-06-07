@@ -305,6 +305,23 @@
     footer a:hover{color:var(--accent);}
 
     /* RESPONSIVE */
+    /* 이미지 2열 나란히 섹션 */
+    .duo-section{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:0;
+      line-height:0;
+      overflow:hidden;
+    }
+    .duo-section img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      min-height:320px;
+      max-height:520px;
+    }
+
     @media(max-width:768px){
       /* 네비게이션 */
       nav{padding:0 1rem;}
@@ -341,21 +358,6 @@
     }
 
     /* 이미지 2열 나란히 섹션 */
-    .duo-section{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:0;
-      line-height:0;
-      overflow:hidden;
-    }
-    .duo-section img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-      min-height:320px;
-      max-height:520px;
-    }
   </style>
 </head>
 <body>
